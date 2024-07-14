@@ -2781,12 +2781,18 @@ body {
 .content-wrap {
   opacity: 0.9;
 }
-.sidebar {
-  opacity: 0.9;
+.main-inner .post-block {
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+.sidebar-inner {
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
 .header-inner {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.8);
 }
 .popup {
-  opacity: 0.9;
+  opacity: 0.8;
+}
+.comments {
+  background: rgba(255,255,255,0.9) none repeat scroll !important;
 }
