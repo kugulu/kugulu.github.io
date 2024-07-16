@@ -2782,7 +2782,7 @@ body {
   opacity: 0.8;
 }
 .main-inner .post-block {
-  background: rgba(255,255,255,0.1) none repeat scroll !important;
+  background: rgba(255,255,255,0.3) none repeat scroll !important;
 }
 .sidebar-inner {
   background: rgba(255,255,255,0.1) none repeat scroll !important;
