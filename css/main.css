@@ -2791,8 +2791,8 @@ body {
   background: rgba(255,255,255,0.1);
 }
 .popup {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 .comments {
-  background: rgba(255,255,255,0.4) none repeat scroll !important;
+  background: rgba(255,255,255,0.1) none repeat scroll !important;
 }
