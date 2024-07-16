@@ -2779,16 +2779,16 @@ body {
   background-position: 50% 50%;
 }
 .content-wrap {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 .main-inner .post-block {
-  background: rgba(255,255,255,0.4) none repeat scroll !important;
+  background: rgba(255,255,255,0.1) none repeat scroll !important;
 }
 .sidebar-inner {
-  background: rgba(255,255,255,0.4) none repeat scroll !important;
+  background: rgba(255,255,255,0.1) none repeat scroll !important;
 }
 .header-inner {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.1);
 }
 .popup {
   opacity: 0.4;
