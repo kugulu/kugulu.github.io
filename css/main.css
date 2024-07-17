@@ -2796,14 +2796,14 @@ body {
 }
 .main-inner {
   background: #fff;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 .header-inner {
   border-radius: 30px;
   box-shadow: rgba(0,0,0,0.1) 0px 15px 35px 0px, rgba(0,0,0,0.31) 6px 6px 10px 0px;
 }
 .brand {
-  color: #fff;
+  color: #fbda41;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -2890,7 +2890,7 @@ article .post-copyright {
   background: #fc6423;
 }
 .busuanzi-value {
-  color: #1890ff;
+  color: #fc6423;
 }
 body {
   background: url("/images/yourbackground.jpg");
