@@ -45,12 +45,12 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl -v http://example.com</span><br></pre></td></tr></table></figure>
 
 <p>例子：ctfhub技能数里的http协议</p>
-<p><img src="C:\Users\33900\blog\blog\source_posts\HTTP协议.assets\image-20240717151049297.png" alt="image-20240717151049297"></p>
+<p><img src="/image-20240717151049297.png" alt="image-20240717151049297"></p>
 <p>这里要求我们使用HTTP的CTFHUB 方法</p>
 <p>用指令</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl -v -X CTFHUB http://challenge-085d605b4c953e1e.sandbox.ctfhub.com:10800/index.php</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>![](C:\Users\33900\blog\blog\source_posts\HTTP协议.assets\屏幕截图 2024-07-17 151310.png)</p>
+<p>![](屏幕截图 2024-07-17 151310.png)</p>
 ]]></content>
   </entry>
   <entry>
