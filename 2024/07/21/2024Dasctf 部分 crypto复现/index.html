@@ -20,28 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kugulu.github.com","root":"/","images":"/images","scheme":"Pisces","darkmode":"auto","version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1}},"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="2024Dasctf  部分cryptocomplex_enc1234567891011121314151617181920212223242526272829303132from Crypto.Util.number import *import randomfrom secret import flagdef GET_KEY(n):    sum&#x3D;2    key&#x3D;[1]    for i i">
+    <meta name="description" content="[TOC] 2024Dasctf  部分cryptocomplex_enc1234567891011121314151617181920212223242526272829303132from Crypto.Util.number import *import randomfrom secret import flagdef GET_KEY(n):    sum&#x3D;2    key&#x3D;[1]    f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2024dasctf部分crypto">
-<meta property="og:url" content="http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto/index.html">
+<meta property="og:title" content="2024dasctf部分crypto复现">
+<meta property="og:url" content="http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto%E5%A4%8D%E7%8E%B0/index.html">
 <meta property="og:site_name" content="kurier&#39;s 的修炼小苑">
-<meta property="og:description" content="2024Dasctf  部分cryptocomplex_enc1234567891011121314151617181920212223242526272829303132from Crypto.Util.number import *import randomfrom secret import flagdef GET_KEY(n):    sum&#x3D;2    key&#x3D;[1]    for i i">
+<meta property="og:description" content="[TOC] 2024Dasctf  部分cryptocomplex_enc1234567891011121314151617181920212223242526272829303132from Crypto.Util.number import *import randomfrom secret import flagdef GET_KEY(n):    sum&#x3D;2    key&#x3D;[1]    f">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-07-21T01:45:57.641Z">
-<meta property="article:modified_time" content="2024-07-21T02:12:35.258Z">
+<meta property="article:modified_time" content="2024-07-21T06:42:06.098Z">
 <meta property="article:author" content="kurier">
 <meta property="article:tag" content="crypto,python,c语言,c++,记事">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto/">
+<link rel="canonical" href="http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto%E5%A4%8D%E7%8E%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto/","path":"2024/07/21/2024Dasctf 部分 crypto/","title":"2024dasctf部分crypto"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto%E5%A4%8D%E7%8E%B0/","path":"2024/07/21/2024Dasctf 部分 crypto复现/","title":"2024dasctf部分crypto复现"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>2024dasctf部分crypto | kurier's 的修炼小苑</title>
+<title>2024dasctf部分crypto复现 | kurier's 的修炼小苑</title>
   
 
 
@@ -305,7 +305,7 @@ mjx-container[display="true"] + br {
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto/">
+    <link itemprop="mainEntityOfPage" href="http://kugulu.github.com/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto%E5%A4%8D%E7%8E%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/ku.jpg">
@@ -318,12 +318,12 @@ mjx-container[display="true"] + br {
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="2024dasctf部分crypto | kurier's 的修炼小苑">
+      <meta itemprop="name" content="2024dasctf部分crypto复现 | kurier's 的修炼小苑">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2024dasctf部分crypto
+          2024dasctf部分crypto复现
         </h1>
 
         <div class="post-meta-container">
@@ -335,7 +335,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-07-21 09:45:57 / 修改时间：10:12:35" itemprop="dateCreated datePublished" datetime="2024-07-21T09:45:57+08:00">2024-07-21</time>
+      <time title="创建时间：2024-07-21 09:45:57 / 修改时间：14:42:06" itemprop="dateCreated datePublished" datetime="2024-07-21T09:45:57+08:00">2024-07-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -363,8 +363,8 @@ mjx-container[display="true"] + br {
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/07/21/2024Dasctf 部分 crypto/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2024/07/21/2024Dasctf%20%E9%83%A8%E5%88%86%20crypto%E5%A4%8D%E7%8E%B0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/07/21/2024Dasctf 部分 crypto复现/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -392,10 +392,11 @@ mjx-container[display="true"] + br {
     
     
     
-    <div class="post-body" itemprop="articleBody"><h3 id="2024Dasctf-部分crypto"><a href="#2024Dasctf-部分crypto" class="headerlink" title="2024Dasctf  部分crypto"></a>2024Dasctf  部分crypto</h3><h4 id="complex-enc"><a href="#complex-enc" class="headerlink" title="complex_enc"></a>complex_enc</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">GET_KEY</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="built_in">sum</span>=<span class="number">2</span></span><br><span class="line">    key=[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        r=random.randint(<span class="number">0</span>,<span class="number">1</span>)</span><br><span class="line">        x=<span class="built_in">sum</span>+random.randint(<span class="number">0</span>,n)*r</span><br><span class="line">        key.append(x)</span><br><span class="line">        <span class="built_in">sum</span>+=x</span><br><span class="line">    <span class="keyword">return</span> key</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">enc</span>(<span class="params">m,k</span>):</span><br><span class="line">    cipher_list = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(m)):</span><br><span class="line">        <span class="keyword">if</span> m[i] == <span class="number">1</span>:</span><br><span class="line">            cipher_list.append(m[i] * k[i])</span><br><span class="line">    cipher = <span class="built_in">sum</span>(cipher_list)</span><br><span class="line">    <span class="keyword">return</span> cipher</span><br><span class="line"></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">m = [<span class="built_in">int</span>(bit) <span class="keyword">for</span> byte <span class="keyword">in</span> flag <span class="keyword">for</span> bit <span class="keyword">in</span> <span class="built_in">format</span>(byte, <span class="string">'08b'</span>)]</span><br><span class="line">key=GET_KEY(<span class="built_in">len</span>(m))</span><br><span class="line">c=enc(m,key)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'output.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="built_in">str</span>(c))</span><br><span class="line">    f.write(<span class="built_in">str</span>(key))</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><p>[TOC]</p>
+<h3 id="2024Dasctf-部分crypto"><a href="#2024Dasctf-部分crypto" class="headerlink" title="2024Dasctf  部分crypto"></a>2024Dasctf  部分crypto</h3><h4 id="complex-enc"><a href="#complex-enc" class="headerlink" title="complex_enc"></a>complex_enc</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">GET_KEY</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="built_in">sum</span>=<span class="number">2</span></span><br><span class="line">    key=[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        r=random.randint(<span class="number">0</span>,<span class="number">1</span>)</span><br><span class="line">        x=<span class="built_in">sum</span>+random.randint(<span class="number">0</span>,n)*r</span><br><span class="line">        key.append(x)</span><br><span class="line">        <span class="built_in">sum</span>+=x</span><br><span class="line">    <span class="keyword">return</span> key</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">enc</span>(<span class="params">m,k</span>):</span><br><span class="line">    cipher_list = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(m)):</span><br><span class="line">        <span class="keyword">if</span> m[i] == <span class="number">1</span>:</span><br><span class="line">            cipher_list.append(m[i] * k[i])</span><br><span class="line">    cipher = <span class="built_in">sum</span>(cipher_list)</span><br><span class="line">    <span class="keyword">return</span> cipher</span><br><span class="line"></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">m = [<span class="built_in">int</span>(bit) <span class="keyword">for</span> byte <span class="keyword">in</span> flag <span class="keyword">for</span> bit <span class="keyword">in</span> <span class="built_in">format</span>(byte, <span class="string">'08b'</span>)]</span><br><span class="line">key=GET_KEY(<span class="built_in">len</span>(m))</span><br><span class="line">c=enc(m,key)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'output.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="built_in">str</span>(c))</span><br><span class="line">    f.write(<span class="built_in">str</span>(key))</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
 
-<p>利用背包密码超递增序列的特点，从尾部依次往前判断是否在背包中，把key最后一个元素删掉</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import long_to_bytes</span><br><span class="line"></span><br><span class="line">c=287687761937146187597379915545639385740275457170939564210821293233370716878150576</span><br><span class="line">key=[....]</span><br><span class="line">m=[]</span><br><span class="line">m = []</span><br><span class="line">for i in range(len(key)):</span><br><span class="line">    if(c &gt; key[len(key)-1-i]or c == key[len(key)-1-i]):</span><br><span class="line">        m.append("1")</span><br><span class="line">        c -= key[len(key)-1-i]</span><br><span class="line">    else:</span><br><span class="line">        m.append("0")</span><br><span class="line"></span><br><span class="line">m = int("".join(m)[::-1],2)</span><br><span class="line">print(long_to_bytes(m))</span><br><span class="line">#b'DASCTF{you_kn0w_b@ckpack_Crypt0?}'</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>利用背包密码超递增序列的特点，从尾部依次往前判断是否在背包中，把key最后一个元素删掉，因为key最开始不是空数组。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import long_to_bytes</span><br><span class="line"></span><br><span class="line">c=287687761937146187597379915545639385740275457170939564210821293233370716878150576</span><br><span class="line">key=[....]</span><br><span class="line">m = []</span><br><span class="line">for i in range(len(key)):</span><br><span class="line">    if(c &gt; key[len(key)-1-i]or c == key[len(key)-1-i]):</span><br><span class="line">        m.append("1")</span><br><span class="line">        c -= key[len(key)-1-i]</span><br><span class="line">    else:</span><br><span class="line">        m.append("0")</span><br><span class="line"></span><br><span class="line">m = int("".join(m)[::-1],2)</span><br><span class="line">print(long_to_bytes(m))</span><br><span class="line">#b'DASCTF{you_kn0w_b@ckpack_Crypt0?}'</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -473,7 +474,7 @@ mjx-container[display="true"] + br {
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">20 分钟</span>
+    <span title="站点阅读时长">21 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
