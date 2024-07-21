@@ -265,12 +265,12 @@ mjx-container[display="true"] + br {
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span>
       </div>
   </nav>
@@ -292,6 +292,126 @@ mjx-container[display="true"] + br {
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://kugulu.github.com/2024/07/21/2024Dasctf%20%20crypto%E9%83%A8%E5%88%86%E9%A2%98%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ku.jpg">
+      <meta itemprop="name" content="kurier">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kurier's 的修炼小苑">
+      <meta itemprop="description" content="crypto菜鸡">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | kurier's 的修炼小苑">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/07/21/2024Dasctf%20%20crypto%E9%83%A8%E5%88%86%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">HTTP协议</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-07-21 09:36:51 / 修改时间：09:37:55" itemprop="dateCreated datePublished" datetime="2024-07-21T09:36:51+08:00">2024-07-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/match/" itemprop="url" rel="index"><span itemprop="name">match</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2024/07/21/2024Dasctf%20%20crypto%E9%83%A8%E5%88%86%E9%A2%98%E8%A7%A3/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/07/21/2024Dasctf  crypto部分题解/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>9 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="2024Dasctf-crypto部分题解"><a href="#2024Dasctf-crypto部分题解" class="headerlink" title="2024Dasctf  crypto部分题解"></a>2024Dasctf  crypto部分题解</h3><h4 id="complex-enc"><a href="#complex-enc" class="headerlink" title="complex_enc"></a>complex_enc</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">GET_KEY</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="built_in">sum</span>=<span class="number">2</span></span><br><span class="line">    key=[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        r=random.randint(<span class="number">0</span>,<span class="number">1</span>)</span><br><span class="line">        x=<span class="built_in">sum</span>+random.randint(<span class="number">0</span>,n)*r</span><br><span class="line">        key.append(x)</span><br><span class="line">        <span class="built_in">sum</span>+=x</span><br><span class="line">    <span class="keyword">return</span> key</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">enc</span>(<span class="params">m,k</span>):</span><br><span class="line">    cipher_list = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(m)):</span><br><span class="line">        <span class="keyword">if</span> m[i] == <span class="number">1</span>:</span><br><span class="line">            cipher_list.append(m[i] * k[i])</span><br><span class="line">    cipher = <span class="built_in">sum</span>(cipher_list)</span><br><span class="line">    <span class="keyword">return</span> cipher</span><br><span class="line"></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">m = [<span class="built_in">int</span>(bit) <span class="keyword">for</span> byte <span class="keyword">in</span> flag <span class="keyword">for</span> bit <span class="keyword">in</span> <span class="built_in">format</span>(byte, <span class="string">'08b'</span>)]</span><br><span class="line">key=GET_KEY(<span class="built_in">len</span>(m))</span><br><span class="line">c=enc(m,key)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'output.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="built_in">str</span>(c))</span><br><span class="line">    f.write(<span class="built_in">str</span>(key))</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<p>利用背包密码超递增序列的特点，从尾部依次往前判断是否在背包中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import long_to_bytes</span><br><span class="line"></span><br><span class="line">c=287687761937146187597379915545639385740275457170939564210821293233370716878150576</span><br><span class="line">key=[....]</span><br><span class="line">m=[]</span><br><span class="line">for i in range (len(key )):</span><br><span class="line">    if (c&gt;key[len(key)-i-2]):</span><br><span class="line">        m+='1'</span><br><span class="line">        c-=key[len(key)-i-2]</span><br><span class="line">    else:</span><br><span class="line">        m+='0'</span><br><span class="line">print(m)</span><br><span class="line">m = int("".join(m)[::-1],2)</span><br><span class="line">print(long_to_bytes(m))</span><br><span class="line">#b'\x84ASCTF{you_kn0w_b@ckpack_Crypt0?}'</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="1z-rsa"><a href="#1z-rsa" class="headerlink" title="1z_rsa"></a>1z_rsa</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> sympy <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> secrets <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">nbit =<span class="number">130</span></span><br><span class="line">e = <span class="number">3</span></span><br><span class="line">l = getPrime(<span class="number">505</span>)</span><br><span class="line">m = bytes_to_long(flag + os.urandom(<span class="number">64</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">assert</span> <span class="built_in">len</span>(flag) == <span class="number">29</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    p, q = getPrime(nbit), getPrime(nbit)</span><br><span class="line">    PQ = <span class="built_in">int</span>(<span class="built_in">str</span>(p&lt;&lt;<span class="number">120</span>)+<span class="built_in">str</span>(q))</span><br><span class="line">    QP = <span class="built_in">int</span>(<span class="built_in">str</span>(q&lt;&lt;<span class="number">120</span>)+<span class="built_in">str</span>(p))</span><br><span class="line">    <span class="keyword">if</span> isPrime(PQ) <span class="keyword">and</span> isPrime(QP):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">n = PQ * QP</span><br><span class="line">PP = nextprime((PQ &gt;&gt; <span class="number">190</span>) * (QP &amp; (<span class="number">2</span> ** <span class="number">190</span> - <span class="number">1</span>)))</span><br><span class="line">QQ = nextprime((QP &gt;&gt; <span class="number">190</span>) * (PQ &amp; (<span class="number">2</span> ** <span class="number">190</span> - <span class="number">1</span>)))</span><br><span class="line">N = PP * QQ</span><br><span class="line">M = <span class="built_in">pow</span>(m,<span class="number">1</span>,l)</span><br><span class="line">c = <span class="built_in">pow</span>(m,e,N)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">'n ='</span>, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'M ='</span>, M)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'l ='</span>, l)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'c ='</span>, c)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">n = 18339446336492672809908730785358232636383625709800392830207979464962269419140428722248172110017576390002616004691759163126532392634394976712779777822451878822759056304050545622761060245812934467784888422790178920804822224673755691</span></span><br><span class="line"><span class="string">M = 36208281423355218604990190624029584747447986456188203264389519699277658026754156377638444926063784368328407938562964768329134840563331354924365667733322</span></span><br><span class="line"><span class="string">l = 56911058350450672322326236658556745353275014753768458552003425206272938093282425278193278997347671093622024933189270932102361261551908054703317369295189</span></span><br><span class="line"><span class="string">c = 720286366572443009268610917990845759123049408295363966717060100862857351750759651979922104897091176824666482923148635058966589592286465060161271579501861264957611980854954664798904862706450723639237791023808177615189976108231923</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<p>$$<br>PQ=10^{40}*2^{120}*p+q\ QP=10^{39}<em>2^{120}<em>q+p\ n=PQ</em>QP=p</em>q(2^{240}*10^{79}+1)+2^{120}<em>10^{39}(q^2+10</em>p^2)\ 因为（2^{240}*10^{79}+1)＜2^{120}<em>10^{39}(q^2+10</em>p^2)但相差较小\ 可以有nn=n//2^{240}*10^{79}-x\然后通过模运算、整除和解方程得到N<br>$$</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> sympy <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">n = <span class="number">18339446336492672809908730785358232636383625709800392830207979464962269419140428722248172110017576390002616004691759163126532392634394976712779777822451878822759056304050545622761060245812934467784888422790178920804822224673755691</span></span><br><span class="line"></span><br><span class="line">M = <span class="number">36208281423355218604990190624029584747447986456188203264389519699277658026754156377638444926063784368328407938562964768329134840563331354924365667733322</span></span><br><span class="line">l = <span class="number">56911058350450672322326236658556745353275014753768458552003425206272938093282425278193278997347671093622024933189270932102361261551908054703317369295189</span></span><br><span class="line">c = <span class="number">720286366572443009268610917990845759123049408295363966717060100862857351750759651979922104897091176824666482923148635058966589592286465060161271579501861264957611980854954664798904862706450723639237791023808177615189976108231923</span></span><br><span class="line">nn=n//(<span class="number">2</span>**<span class="number">240</span>*<span class="number">10</span>**<span class="number">79</span>+<span class="number">1</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(nn-<span class="number">800</span>,nn+<span class="number">800</span>):</span><br><span class="line">    <span class="keyword">if</span>(n-i*(<span class="number">2</span>**<span class="number">240</span>*<span class="number">10</span>**<span class="number">79</span>+<span class="number">1</span>))%(<span class="number">2</span>**<span class="number">120</span>*<span class="number">10</span>**<span class="number">39</span>)==<span class="number">0</span>:</span><br><span class="line">        leak=(n-i*(<span class="number">2</span>**<span class="number">240</span>*<span class="number">10</span>**<span class="number">79</span>+<span class="number">1</span>))//(<span class="number">2</span>**<span class="number">120</span>*<span class="number">10</span>**<span class="number">39</span>)</span><br><span class="line">        p,q=symbols(<span class="string">'p,q'</span>)</span><br><span class="line">        res=solve([p**<span class="number">2</span>+<span class="number">10</span>*q**<span class="number">2</span>-leak,p*q-i],[p,q])</span><br><span class="line">        <span class="built_in">print</span>(res)</span><br><span class="line">        <span class="keyword">for</span> pp,qq <span class="keyword">in</span> res:</span><br><span class="line">            <span class="keyword">if</span> pp&gt;<span class="number">0</span> <span class="keyword">and</span> qq&gt;<span class="number">0</span>:</span><br><span class="line">                PQ=<span class="built_in">int</span>(<span class="built_in">str</span>(<span class="built_in">int</span>(pp)&lt;&lt;<span class="number">120</span>)+<span class="built_in">str</span>(<span class="built_in">int</span>(qq)))</span><br><span class="line">                QP=<span class="built_in">int</span>(<span class="built_in">str</span>(<span class="built_in">int</span>(qq)&lt;&lt;<span class="number">120</span>)+<span class="built_in">str</span>(<span class="built_in">int</span>(pp)))</span><br><span class="line">                PP = nextprime((PQ &gt;&gt; <span class="number">190</span>) * (QP &amp; (<span class="number">2</span> ** <span class="number">190</span> - <span class="number">1</span>)))</span><br><span class="line">                QQ = nextprime((QP &gt;&gt; <span class="number">190</span>) * (PQ &amp; (<span class="number">2</span> ** <span class="number">190</span> - <span class="number">1</span>)))</span><br><span class="line">                N = PP * QQ</span><br><span class="line">                <span class="built_in">print</span>(N)</span><br><span class="line">                <span class="built_in">print</span>(PQ)</span><br><span class="line">                <span class="built_in">print</span>(QP)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="comment">#763933528218428362740063144747893290714655295576768532896029874141179804730143020017430379534079773751531037961074867132893544981605022026151484151321515584652838724809597675412676810669583078026377048734720511960708515190930979        </span></span><br></pre></td></tr></table></figure>
+
+<p>然后copper</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span>*</span><br><span class="line">N=<span class="number">763933528218428362740063144747893290714655295576768532896029874141179804730143020017430379534079773751531037961074867132893544981605022026151484151321515584652838724809597675412676810669583078026377048734720511960708515190930979</span></span><br><span class="line">M = <span class="number">36208281423355218604990190624029584747447986456188203264389519699277658026754156377638444926063784368328407938562964768329134840563331354924365667733322</span></span><br><span class="line">l = <span class="number">56911058350450672322326236658556745353275014753768458552003425206272938093282425278193278997347671093622024933189270932102361261551908054703317369295189</span></span><br><span class="line">c = <span class="number">720286366572443009268610917990845759123049408295363966717060100862857351750759651979922104897091176824666482923148635058966589592286465060161271579501861264957611980854954664798904862706450723639237791023808177615189976108231923</span></span><br><span class="line">PR.&lt;k&gt;= PolynomialRing(Zmod(N))</span><br><span class="line">f=(M+k*l)^<span class="number">3</span>-c</span><br><span class="line">f=f.monic()</span><br><span class="line">t=f.small_roots(x=<span class="number">2</span>^<span class="number">239</span>,epsilon =<span class="number">0.02</span>)[<span class="number">0</span>]</span><br><span class="line">m=M+t*l</span><br><span class="line"><span class="built_in">print</span>(long_to_bytes(<span class="built_in">int</span>(m)))</span><br><span class="line"><span class="comment">#DASCTF{Ar3_Y0u_Su93_Abt139??}</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -587,14 +707,14 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">7k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点阅读时长">12 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
